@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>TIENDA TEST COCO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+  <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
+  <link rel="stylesheet"  href="minimos.css">
+  <style>
+		header{text-align:center;}
+		article img{max-height:180px;}
+		article p,footer p{text-align:center;}
+  </style>
+</head>
+<body>
+	<header>
+		<img src="images/p1.jpg" style="max-width:100%;width:auto;height:auto;">><
+		<h1>TIENDA  COCO</h1>
+	</header>
+
+   <!--inicio barra de navegacion-->
+        <nav class="navbar navbar-default navbar-static-top">  <!--se puede adaptar para hacer una barra de navegacion--><!--el atributo class (que puedo llamar igual en muchas etiquetas) me ayudara a estilizar muchos componentes dentro de la pagina con las mismas normas--><!--el atributo id funciona igual que class, pero solo lo puedo usar 1 vez para el mismo contenido del id en una etiqueta-->
+
+            <div class="container">  <!--container -> me da un margen a la pagina; container-fluid -> no me da margen a la pagina-->
+                <div class="navbar-header"> <!--cabecera de la barra de navegacion-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Este boton despliega la barra de navegacion</span> <!--esta etiqueta me ayuda en cuestiones de las personas con discapacidad visual que accedan a la pagina-->
+
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+                    <a class="navbar-brand" href="#">Shop</a> <!--class="navbar-brand" -> me indiga el logotipo (de mi empresa, organizacion) en la barra de navegacion -->
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">  <!--colapser la barra de navegacion-->
+                    <ul class="nav navbar-nav">        <!--lista desordenada--> <!--class="nav navbar-nav" -> me ayudara a que esta lista desordenada se comporte como un menu de elementos diferentes-->
+                        <li> <a href="#">¿Quienes somos?</a>  </li>  <!--item de mi lista desordenada-->
+                        <li> <a href="#">Productos</a>  </li> 
+                        <li> <a href="#">Contacto</a>  </li> 
+                    </ul>
+
+                    <!--login y registro de usuario-->
+                    <ul class="nav navbar-nav navbar-right">  <!-- navbar-right -> me mostrara los items al lado derecho de la barra de navegacion-->
+                        <li> <a href="loguin.html">Iniciar Sesión</a>  </li> 
+                        <li> <a href="form1.html">Registrarse</a>  </li>    
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>  <!--fin barra de navegacion-->
+
+          <div class="container">
+
+            <div class="jumbotron"> <!--cabecera, incluido en bootstrap-->
+                <h1>Disfruta de nuestra variedad de articulos</h1>
+                <p>Pregunta por nuestras ofertas y cualquier duda que tengas</p>
+            </div>
+
+
+
+	<div class="container galeria">
+		<articles class="row">
+
+			<article class="col-md-3">
+			<a href="images/01.jpg" data-lightbox="example-set" data-title="Regala">
+			<img src="images/01.jpg" alt="Regala" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Figura Ironman $65000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/02.jpg" data-lightbox="example-set" data-title="Regala">
+			<img src="images/02.jpg" alt="Regala" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Figura Flecha Verde $46000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/03.jpg" data-lightbox="example-set" data-title="Regala">
+			<img src="images/03.jpg" alt="Regala" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Figura Spiderman $80000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/04.jpg" data-lightbox="example-set" data-title="Regala">
+			<img src="images/04.jpg" alt="Regala" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Figura Capitan Americaa $74000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i1.jpg" data-lightbox="example-set" data-title="Regala">
+			<img src="images/i1.jpg" alt="Regala" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>BatmanClasic $20000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i2.jpg" data-lightbox="example-set" data-title="Descansa">
+			<img src="images/i2.jpg" alt="Descansa" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Sayyins $25000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i3.jpg" data-lightbox="example-set" data-title="Empatiza">
+			<img src="images/i3.jpg" alt="Empatiza" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Superman $15000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i4.jpg" data-lightbox="example-set" data-title="Ház deporte">
+			<img src="images/i4.jpg" alt="Ház deporte" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>GokuBlue $50000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i5.jpg" data-lightbox="example-set" data-title="Vuela">
+			<img src="images/i5.jpg" alt="Vuela" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>FigurasTitanesBat $45000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i6.jpg" data-lightbox="example-set" data-title="Sueña">
+			<img src="images/i6.jpg" alt="Sueña" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>CubreCamComic $70000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i7.jpg" data-lightbox="example-set" data-title="Viaja">
+			<img src="images/i7.jpg" alt="Viaja" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Llaveros Ljustice $10000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i8.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i8.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>PokemonMix $32000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i8.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i9.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>TenisComic $30000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i8.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i10.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>SuperHeroesPack $23000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i11.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i11.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Buzo $82000 C/u</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i12.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i12.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>EntrenaSayayin $24000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i13.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i13.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Edicion Dioses $43000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i14.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i14.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>MixClasic $20000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i15.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i15.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Figura Halo $37000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i16.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i6.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Dragon ball Z $22000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i17.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i17.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>KameHa $25000</p>
+			</article>
+            
+
+			<article class="col-md-3">
+			<a href="images/i18.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i18.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>Relax Z $18000</p>
+			</article>
+
+			<article class="col-md-3">
+			<a href="images/i19.jpg" data-lightbox="example-set" data-title="Relájate">
+			<img src="images/i19.jpg" alt="Relájate" class="img-thumbnail"></a>
+			<button type="button" class="btn btn-success"  > Comprar  </button>
+			<p>RelaxZ Polo $25000</p>
+			</article>
+
+
+		</articles>
+	</div>
+	<footer>
+    
+    <p align="left"> Email:infococo@gmail.com </p>
+    <p align="right"> Telefono +57 313 899 9045 </p>
+    <p align="center"> 2017 todos los derechos reservados</p>
+	
+	</footer>
+
+  <script src="lightbox/js/lightbox.min.js"></script>
+  <script>
+	  lightbox.option({
+		'albumLabel': "Imagen %1 de %2"
+	  })
+  </script>
+</body>
+</html>
